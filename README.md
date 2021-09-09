@@ -27,10 +27,18 @@ This plugin is simply a framework that makes loading and unloading map specific 
 These commands are mostly for debugging purposes. You do not need these for normal usage.
 
 - mscript_load [plugin]
+
 Load a plugin in the addons/disabled/mscript directory. Do not add .smx to the end. Plugins with the same name of the map will be loaded automatically so you do not need this unless you want to load more plugins.
 
 - mscript_unload
+
 Unload all plugins loaded through mscript_load this map.
 
 - mscript_reload
+
 Reload all plugins loaded through mscript_load this map.
+
+## TODO
+
+- Add more examples of map to plugin communication
+- Add example of custom entity inputs
