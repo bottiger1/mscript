@@ -9,7 +9,11 @@ public Plugin:myinfo =
 
 public void OnPluginStart() 
 {
-    RegServerCmd("mscript_dostuff", Cmd_DoStuff); // use a point_servercommand to activate this
+    // use a point_servercommand to activate this
+    // It is recommended that you prefix your commands with "mscript_cmd_" so the command can simply be whitelisted with this extension 
+    // https://forums.alliedmods.net/showthread.php?t=184270
+
+    RegServerCmd("mscript_cmd_dostuff", Cmd_DoStuff); 
 
     HookEvent("teamplay_round_start", OnRoundRestart);
 }
