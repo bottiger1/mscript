@@ -22,6 +22,10 @@ This is not necessary at all, almost anything you can do in vscript is possible 
 
 This plugin is simply a framework that makes loading and unloading map specific plugins cleanly. One major reason why people don't want to use plugins is because sourcemod automatically loads them all on startup and then you'd have 20 map specific plugins taking up ram and cpu. This plugin solves that issue completely.
 
+## Examples
+
+https://github.com/bottiger1/mscript/tree/main/examples
+
 ## Commands
 
 These commands are mostly for debugging purposes. You do not need these for normal usage.
