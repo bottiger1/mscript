@@ -36,11 +36,11 @@ Load a plugin in the addons/disabled/mscript directory. Do not add .smx to the e
 
 - mscript_unload
 
-Unload all plugins loaded through mscript_load this map.
+Unload all plugins loaded through mscript_load this map. (includes the plugin automatically loaded with the same name as the map)
 
 - mscript_reload
 
-Reload all plugins loaded through mscript_load this map.
+Reload all plugins loaded through mscript_load this map. (includes the plugin automatically loaded with the same name as the map)
 
 ## TODO
 
