@@ -22,7 +22,9 @@ This is not necessary at all, almost anything you can do in vscript is possible 
 
 This plugin is simply a framework that makes loading and unloading map specific plugins cleanly. One major reason why people don't want to use plugins is because sourcemod automatically loads them all on startup and then you'd have 20 map specific plugins taking up ram and cpu. This plugin solves that issue completely.
 
-## Examples
+## How to use this?
+
+Put mscript.smx in your plugins directory. If you have a map named ctf_mymap, make a plugin called ctf_mymap, and put the smx in addons/disabled/mscript.
 
 https://github.com/bottiger1/mscript/tree/main/examples
 
@@ -36,11 +38,11 @@ Load a plugin in the addons/disabled/mscript directory. Do not add .smx to the e
 
 - mscript_unload
 
-Unload all plugins loaded through mscript_load this map.
+Unload all plugins loaded through mscript_load this map. (includes the plugin automatically loaded with the same name as the map)
 
 - mscript_reload
 
-Reload all plugins loaded through mscript_load this map.
+Reload all plugins loaded through mscript_load this map. (includes the plugin automatically loaded with the same name as the map)
 
 ## TODO
 
