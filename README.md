@@ -42,3 +42,4 @@ Reload all plugins loaded through mscript_load this map.
 
 - Add more examples of map to plugin communication
 - Add example of custom entity inputs
+- Add example of custom filters
