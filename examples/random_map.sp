@@ -7,6 +7,10 @@ public Plugin:myinfo =
 	url         = "https://www.skial.com"
 };
 
+#include <tf2>
+#include <sdktools>
+#include <sdkhooks>
+
 public void OnPluginStart() 
 {
     // use a point_servercommand to activate this
@@ -37,7 +41,7 @@ public Action Cmd_DoStuff(int args)
 }
 
 // hook all zones named "zone_of_death", make them do something special when a player touches it
-public Action OnRoundRestart(Handle event, const char[] name, bool dontBroadcast) 
+public Action OnRoundRestart(Handle event, const char[] eventName, bool dontBroadcast) 
 {
     char name[64];
     int zone = MaxClients+1;
